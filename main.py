@@ -13,7 +13,7 @@ while (True):
   try:
     choice = int(input())
   except ValueError:
-    print("Inserire solo numeri")
+    print("Insert only numbers")
 
   match choice:
     case 1:
