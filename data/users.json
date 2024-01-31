@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Mario",
+      "lastname": "Rossi",
+      "age": 25
+    },
+    {
+      "id": 2,
+      "firstname": "Anna",
+      "lastname": "Neri",
+      "age": 22
+    },
+    {
+      "id": 3,
+      "firstname": "Alessio",
+      "lastname": "Verdi",
+      "age": 15
+    }
+  ]
+}
