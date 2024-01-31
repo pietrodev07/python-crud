@@ -20,7 +20,7 @@ while (True):
       users = get_users()
       show_users(users)
     case 2:
-      id = int(input("Inserisci l'id dell'utente: "))
+      id = int(input("Insert the ID of the user: "))
       user = get_user(id)
 
       if user is not None:
