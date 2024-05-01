@@ -1,4 +1,4 @@
-from utils.data_handler import get_data, updata_data
+from utils.data_handler import get_data, update_data
 
 USERS_FILE = "data/users.json"
 
@@ -21,7 +21,7 @@ def delete_user(id: int):
       user_to_delete = user
 
   users.remove(user_to_delete)
-  updata_data(USERS_FILE, users)
+  update_data(USERS_FILE, users)
 
 def create_user(id: int, firstname: str, lastname: str, age: int):
   user = {
@@ -33,7 +33,7 @@ def create_user(id: int, firstname: str, lastname: str, age: int):
 
   users= get_users()
   users.append(user)
-  updata_data(USERS_FILE, users)
+  update_data(USERS_FILE, users)
 
 def edit_user(id: int, firstname: str, lastname: str, age: int):
   users= get_users()
@@ -44,4 +44,4 @@ def edit_user(id: int, firstname: str, lastname: str, age: int):
       user["lastname"] = lastname
       user["age"] = age
 
-  updata_data(USERS_FILE, users)
+  update_data(USERS_FILE, users)
